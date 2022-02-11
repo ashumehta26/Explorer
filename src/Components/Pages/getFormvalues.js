@@ -23,7 +23,7 @@ export default function Rahul() {
 formData.append("a",a)
     axios.post('http://192.168.1.56:4000/upload', formData)
     .then(res => {
-        console.log("resss",res)
+        console.log("value of res",res)
 
     })
     // axios({
@@ -48,7 +48,7 @@ formData.append("a",a)
  function uploadPicture  (e) {
      console.log("eeeee",e.target.files)
     setpicturePreview(e.target.files)
-    // console.log(picturePreview)
+   
 };
   return (
     <div>
